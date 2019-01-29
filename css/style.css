@@ -569,6 +569,32 @@ header {
     vertical-align: text-bottom;
 }
 
+/*  Content
+----------------------*/
+
+#content h1 {
+    margin-top: 2rem;
+}
+
+#content h2 {
+    margin-top: 2rem;
+}
+
+#content h3 {
+    margin-top: 1.75rem;
+}
+
+#content h4 {
+    margin-top: 1.75rem;
+}
+
+#content h5 {
+    margin-top: 1.5rem;
+}
+
+#content h6 {
+    margin-top: 1.5rem;
+}
 
 /*  FOOTER
 ----------------------*/
