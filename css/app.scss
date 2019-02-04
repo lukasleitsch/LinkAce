@@ -62,3 +62,8 @@ body {
     padding-bottom: 50%;
   }
 }
+
+.fill-primary {
+  fill: $primary !important;
+  color: $primary !important;
+}
