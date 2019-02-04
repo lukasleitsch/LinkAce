@@ -1,0 +1,4 @@
+---
+title: Trash
+layout: default
+---

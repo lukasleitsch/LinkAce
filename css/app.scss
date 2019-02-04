@@ -89,3 +89,42 @@ body {
   fill: $primary !important;
   color: $primary !important;
 }
+
+.docs-content {
+
+  h1 {
+    margin-top: 3.5rem;
+  }
+
+  h2 {
+    margin-top: 3rem;
+  }
+
+  h3 {
+    margin-top: 2.5rem;
+  }
+
+  h4 {
+    margin-top: 2rem;
+  }
+
+  h5 {
+    margin-top: 1.5rem;
+  }
+
+  h6 {
+    margin-top: 1rem;
+  }
+}
+
+.docs-main {
+  @include media-breakpoint-up(md) {
+    order: 2
+  }
+}
+
+.docs-sidebar {
+  @include media-breakpoint-up(md) {
+    order: 1
+  }
+}
