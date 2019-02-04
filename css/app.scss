@@ -10,6 +10,10 @@ $navbar-link-height: $font-size-base * $line-height-base + $navbar-padding-y * 2
 body {
   padding-top: 98px;
   background: $primary;
+
+  &.docs {
+    background: $gray-800;
+  }
 }
 
 .bg-gradient {
@@ -38,17 +42,35 @@ body {
 .nav-menu {
   padding: 1rem 0;
   box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0);
-  transition: padding .1s ease, padding .1s ease;
+  transition: padding .1s ease, padding .3s ease;
 
   &.is-scrolling {
-    padding: .5rem 0;
-    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .1);
-    transition: padding .1s ease, padding .1s ease;
+    padding: .35rem 0;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .2);
+    transition: padding .1s ease, padding .3s ease;
   }
 }
 
 .section {
   padding: 4rem 0;
+}
+
+.section-title {
+  margin: 3rem 0 4rem;
+  text-align: center;
+
+  small {
+    display: inline-block;
+    font-size: $font-size-base;
+    padding-bottom: .5rem;
+  }
+}
+
+.nav-tabs {
+  .nav-link {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
 }
 
 .img-holder {

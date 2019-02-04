@@ -17,7 +17,7 @@ URI     : https://colorlib.com
 
   <!-- Font -->
   <link rel="dns-prefetch" href="//fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 
   <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
@@ -37,84 +37,66 @@ URI     : https://colorlib.com
   <meta name="msapplication-TileImage" content="/images/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#44679F">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="/css/bootstrap.min.css">
-  <!-- Themify Icons -->
-  <link rel="stylesheet" href="/css/themify-icons.css">
-  <!-- Owl carousel -->
-  <link rel="stylesheet" href="/css/owl.carousel.min.css">
-  <!-- Main css -->
-  <link href="/css/style.css" rel="stylesheet">
+  <!-- Main CSS -->
+  <link href="/css/app.css" rel="stylesheet">
 </head>
 
-<body data-spy="scroll" data-target="#navbar" data-offset="30">
+<body class="docs" data-spy="scroll" data-target="#navbar" data-offset="30">
 
 <!-- Nav Menu -->
 
-<div class="nav-menu fixed-top">
+<div class="nav-menu fixed-top bg-primary">
   <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <nav class="navbar navbar-dark navbar-expand-lg">
-          <a class="navbar-brand" href="/docs/"><img src="/images/logo_linkace_wht.svg" width="109px" height="40px"
-              alt="logo"></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
-              aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-            <span
-                class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbar">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
-              <li class="nav-item">
-                <a href="https://github.com/Kovah/LinkAce/archive/master.zip"
-                    class="btn btn-outline-light my-3 my-sm-0 ml-lg-3">Download</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+    <nav class="navbar navbar-dark navbar-expand-lg">
+      <a class="navbar-brand" href="/">
+        <img src="/images/logo_linkace_wht.svg" width="109px" height="40px" alt="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+          aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"><span
+          class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/docs/">Docs</a></li>
+          <li class="nav-item">
+            <a href="https://github.com/Kovah/LinkAce/archive/master.zip"
+                class="btn btn-outline-light my-3 my-sm-0 ml-lg-3">Download</a>
+          </li>
+        </ul>
       </div>
-    </div>
+    </nav>
   </div>
 </div>
 
-<header class="bg-gradient">
-  <div class="container py-5">
+<header class="section bg-gradient text-center text-light" id="home">
+  <div class="container">
     <h1>LinkAce</h1>
     <p class="tagline">A small, selfhosted bookmark manager with advanced features.</p>
   </div>
 </header>
 
-<div class="section">
+<!-- Content -->
+<div class="section bg-white">
   <div class="container">
 
-    <h1 class="mt-0">{{ page.title }}</h1>
+    <h1>{{ page.title }}</h1>
 
-    <div id="content" class="my-3">
+    <div class="docs-content">
       {{ content }}
-    </div>
-
-  </div>
-</div>
-
-<div class="light-bg py-5" id="contact">
-  <div class="container">
-    <div class="social-icons text-center">
-      <a href="https://github.com/Kovah/LinkAce/"><span class="ti-github"></span></a>
-      <a href="#"><span class="ti-twitter-alt"></span></a>
     </div>
   </div>
 </div>
 <!-- // end .section -->
 
 
-<footer class="my-5 text-center">
-  <!-- Copyright removal is not prohibited! -->
+
+<footer class="bg-dark text-light py-5 text-center">
   <p class="mb-2">
     <small>Copyright © Kovah.de. All rights reserved. Site template by <a href="https://colorlib.com" rel="nofollow">Colorlib</a>
     </small>
   </p>
 </footer>
+
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -126,6 +108,8 @@ URI     : https://colorlib.com
     integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
     crossorigin="anonymous"></script>
 
+<script src="/js/script.js"></script>
+
 <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/solid.js"
     integrity="sha384-6FXzJ8R8IC4v/SKPI8oOcRrUkJU8uvFK6YJ4eDY11bJQz4lRw5/wGthflEOX8hjL"
     crossorigin="anonymous"></script>
@@ -134,5 +118,4 @@ URI     : https://colorlib.com
     crossorigin="anonymous"></script>
 
 </body>
-
 </html>
