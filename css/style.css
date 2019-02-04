@@ -35,6 +35,7 @@ Copyright © All rights Reserved
     --c-primary: #44679f;
     --c-primary-dark: #2C528F;
     --c-primary-darker: #193C74;
+    --c-text: #343a40;
 }
 
 /* GLOBAL
@@ -571,6 +572,10 @@ header {
 
 /*  Content
 ----------------------*/
+
+#content {
+    color: var(--c-text);
+}
 
 #content h1 {
     margin-top: 2rem;

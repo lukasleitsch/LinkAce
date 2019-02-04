@@ -1,2 +1,5 @@
 # LinkAce Jekyll Configuration
-exclude: ['node_modules']
+exclude: ['node_modules', '.idea']
+sass:
+  sass_dir: _scss
+  style: compressed
