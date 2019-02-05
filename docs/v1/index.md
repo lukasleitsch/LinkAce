@@ -5,6 +5,7 @@ layout: default
 
 #### General
 
+* [General](/docs/v1/general/about)
 * [Changelog](/docs/v1/general/changelog)
 
 #### Setup
@@ -14,7 +15,6 @@ layout: default
 
 #### The Application
 
-* [General](/docs/v1/application/)
 * [Dashboard](/docs/v1/application/dashboard)
 * [Links](/docs/v1/application/links)
 * [Tags](/docs/v1/application/tags)
