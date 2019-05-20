@@ -28,13 +28,14 @@ $(function () {
   $(window).on('scroll', function () {
     menuscroll();
   });
+
   /*-----------------------------------
    * NAVBAR CLOSE ON CLICK
    *-----------------------------------*/
-
   $('.navbar-nav > li:not(.dropdown) > a').on('click', function () {
     $('.navbar-collapse').collapse('hide');
   });
+
   /*
    * NAVBAR TOGGLE BG
    *-----------------*/
