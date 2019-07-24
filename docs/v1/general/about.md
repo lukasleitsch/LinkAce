@@ -4,10 +4,11 @@ layout: default
 ---
 
 LinkAce is a bookmark manager like Shaarli and other similar tools.  
-I built this tool to have something that fits my personal needs that other bookmark managers couldn't solve,
+I built this tool to have something that fits my personal needs which other bookmark managers couldn't solve,
 even if most features are almost the same. I used Shaarli for a while but I never really felt very comfortable
 with it. Maybe it was the inability to add another layer of taxonomy to saved links or the used template system which
 stopped me from customizing the app like I want.
+
 
 ## LinkAce features
 
@@ -18,6 +19,9 @@ stopped me from customizing the app like I want.
 * Add notes to links to add thoughts
 * Advanced search for your bookmarks
 * Import existing bookmarks from HTML exports (other methods planned)
+* Automated "backups" of your sites via the [Waybackmachine](https://archive.org/web/web.php)
+* Implemented support for complete database and app backups to Amazon AWS S3
+
 
 ## A note on support and new features
 
