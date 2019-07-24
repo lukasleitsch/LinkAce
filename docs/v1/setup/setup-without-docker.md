@@ -56,4 +56,29 @@ error_page 404 /index.php;
 ### 4. Import a database dump to your Database
 
 To be able to run the app you need to import a database dump into your database.
-> @TODO
+
+[> Download the latest Dump](/docs/v1/setup/db-plain_v0-0-19.sql) (db-plain_v0-0-19.sql)
+
+Please contact your hosting provider or administrator if you don't know how to import a database dump. As it highly
+depends on your system setup, I do not provide any support for this task.
+
+After that, login to the system with the following credentials:
+```
+Username: linkace@example.com
+Password: demopassword
+```
+
+### 5. Change the user details
+
+Once logged in, go to the user settings available from the dropdown menu beside the username and change the following
+details on the settings page:
+
+* Username
+* Email
+* Password
+
+You can now use LinkAce.
+
+---
+
+Next Step: [Post-Setup Steps](/docs/v1/setup/post-setup)

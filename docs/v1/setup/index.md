@@ -60,3 +60,7 @@ docker exec -it linkace_php_1 bash -c "php artisan registeruser yourname your@em
 ```
 
 You can now use LinkAce.
+
+---
+
+Next Step: [Post-Setup Steps](/docs/v1/setup/post-setup)
