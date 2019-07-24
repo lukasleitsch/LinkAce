@@ -1,5 +1,6 @@
 # LinkAce Jekyll Configuration
 exclude: ['.idea']
+highlighter: rouge
 sass:
   sass_dir: _scss
   style: compressed
