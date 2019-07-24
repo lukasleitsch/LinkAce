@@ -19,6 +19,7 @@ stopped me from customizing the app like I want.
 * Add notes to links to add thoughts
 * Advanced search for your bookmarks
 * Import existing bookmarks from HTML exports (other methods planned)
+* Automated link checks to make sure your links stay available
 * Automated "backups" of your sites via the [Waybackmachine](https://archive.org/web/web.php)
 * Implemented support for complete database and app backups to Amazon AWS S3
 

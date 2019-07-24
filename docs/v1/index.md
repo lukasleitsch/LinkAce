@@ -12,6 +12,7 @@ layout: default
 
 * [Setup with Docker](/docs/v1/setup/)
 * [Setup without Docker](/docs/v1/setup/setup-without-docker)
+* [Post-Setup Steps](/docs/v1/setup/post-setup)
 
 #### The Application
 
