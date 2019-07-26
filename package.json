@@ -19,6 +19,9 @@
     "popper.js": "^1.15.0"
   },
   "scripts": {
+    "predeploy": "npm run production",
+    "deploy": "gh-pages -d build",
+
     "dev": "npm run development -- --watch",
     "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "watch": "npm run development -- --watch",
