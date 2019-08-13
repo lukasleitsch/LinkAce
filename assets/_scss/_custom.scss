@@ -119,6 +119,11 @@ body {
     padding: $spacer * .5;
     border-radius: $border-radius;
   }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 .docs-main {
