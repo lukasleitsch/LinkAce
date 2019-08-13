@@ -16,7 +16,11 @@ schedule certain tasks. The cron is kind of a script that runs tasks on predefin
 The cron token you can access or re-generate in the system settings is needed to properly authenticate your cron
 script against LinkAce, so no third party can trigger the scheduled tasks.
 
-Currently, the following things will happen
+Currently, the following tasks will be run:
+
+* LinkAce runs the [link check](/docs/v1/application/link-checks) and sends a notification if moved or dead links 
+were found.
+* LinkAce sends requests to the Wayback Machine with all queued links, so they are backed up for later.
 
 ### Setting up the cron
 
