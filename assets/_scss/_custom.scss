@@ -85,6 +85,10 @@ body {
   color: $primary !important;
 }
 
+.page-title {
+  margin-bottom: $spacer * 1.5;
+}
+
 .docs-content {
 
   h1 {
@@ -111,18 +115,23 @@ body {
     margin-top: 1rem;
   }
 
+  p {
+    margin-bottom: map_get($spacers, 4);
+  }
+
   hr {
-    margin: ($spacer * 2) 0;
+    margin: map_get($spacers, 5) 0;
   }
 
   .highlight pre {
-    padding: $spacer * .5;
+    padding: map_get($spacers, 2);
     border-radius: $border-radius;
   }
 
   img {
     max-width: 100%;
     height: auto;
+    box-shadow: 0 3px 10px rgba($gray-900, .1);
   }
 }
 

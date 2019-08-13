@@ -3,6 +3,7 @@ import { dom, library } from '@fortawesome/fontawesome-svg-core';
 import { faSave } from '@fortawesome/free-solid-svg-icons/faSave';
 import { faFolder } from '@fortawesome/free-solid-svg-icons/faFolder';
 import { faArchive } from '@fortawesome/free-solid-svg-icons/faArchive';
+import { faBoxOpen } from '@fortawesome/free-solid-svg-icons/faBoxOpen';
 import { faStickyNote } from '@fortawesome/free-solid-svg-icons/faStickyNote';
 import { faSearch } from '@fortawesome/free-solid-svg-icons/faSearch';
 import { faShareAlt } from '@fortawesome/free-solid-svg-icons/faShareAlt';
@@ -16,6 +17,7 @@ export function initFontAwesome () {
   library.add(faFolder);
   library.add(faSave);
   library.add(faArchive);
+  library.add(faBoxOpen);
   library.add(faStickyNote);
   library.add(faSearch);
   library.add(faShareAlt);
