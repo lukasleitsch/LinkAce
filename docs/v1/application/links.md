@@ -41,7 +41,7 @@ to the link details page, but will see the link form again.
 
 ## Link Details
 
-![Preview of the Dashboard](/images/screens/v1/linkace_links_view.png)
+![Preview of Link Details](/images/screens/v1/linkace_links_view.png)
 
 The link detail page shows all available information about the link, including title, description, categories and tags.
 From the details page you can directly hop into the edit form or delete the link.
