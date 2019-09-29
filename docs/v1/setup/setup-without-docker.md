@@ -57,7 +57,7 @@ error_page 404 /index.php;
 
 To be able to run the app you need to import a database dump into your database.
 
-[> Download the latest Dump](/docs/v1/setup/db-plain_v0-0-19.sql) (db-plain_v0-0-19.sql)
+[> Download the latest Dump](/docs/v1/setup/db-plain_v0-0-22.sql) (db-plain_v0-0-22.sql)
 
 Please contact your hosting provider or administrator if you don't know how to import a database dump. As it highly
 depends on your system setup, I do not provide any support for this task.
