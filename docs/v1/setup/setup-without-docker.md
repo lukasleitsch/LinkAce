@@ -4,7 +4,7 @@ layout: default
 ---
 
 The application was developed with being used with Docker in mind. All following steps will try to work around this but
-cannot be guaranteed to work in every environment.
+cannot be guaranteed to work in every environment. Please remember that you need shell access to work with LinkAce.
 
 ### Requirements
 
