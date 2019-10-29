@@ -5,11 +5,11 @@ layout: default
 
 Links are - for sure - the heart of LinkAce and store information about bookmarks together with their corresponding
 meta data. The core concept is that you can simply save URLs and LinkAce will try to parse some meta data from the 
-website. You may also categorize links by adding categories or tags.
+website. You may also categorize links by adding tags.
 
 ## Link Overview
 
-The link overview lists all available links together with some meta information like categories and tags as well as
+The link overview lists all available links together with some meta information like tags as well as
 the sharing options and links for editing and deleting them.
 
 ## Adding new Links
@@ -29,7 +29,7 @@ The main form shows you a lot of different fields which will be described in the
 | URL | Yes | Contains the URL of the link you want to add |
 | Title | No | You may set a custom title for the link here. If left blank, LinkAce will try to parse the title from the website. |
 | Description | No | You may set a custom description for the link here. If left blank, LinkAce will try to parse the description from the website. |
-| Category | No | Select a category for the link |
+| Category | No | Used to add the link to lists. When you start typing, LinkAce will search for existing tags. If there are none you may add new tags by just entering them here. |
 | Tags | No | Used to add tags for the link. When you start typing, LinkAce will search for existing tags. If there are none you may add new tags by just entering them here. |
 | Is Private | No | Set the privacy mode of the link here. |
 
@@ -43,7 +43,7 @@ to the link details page, but will see the link form again.
 
 ![Preview of Link Details](/images/screens/v1/linkace_links_view.png)
 
-The link detail page shows all available information about the link, including title, description, categories and tags.
+The link detail page shows all available information about the link, including title, description, lists and tags.
 From the details page you can directly hop into the edit form or delete the link.
 
 You will also be shown all share links if you enabled some in the user settings.

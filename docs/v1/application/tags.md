@@ -19,3 +19,5 @@ alternative for the advanced search.
 
  Tags can be added through the menu or directly in the link add form. If added by using the dedicated form accessible
  from the menu you have an additional option for making a tag private. It will then be displayed only to you.
+ 
+  Please notice that tags cannot contain commas.
