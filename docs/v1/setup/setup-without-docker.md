@@ -8,9 +8,24 @@ cannot be guaranteed to work in every environment. Please remember that you need
 
 ### Requirements
 
-* PHP > 7.2
-* MySQL compatible database server
-* nginx / Apache web server
+* Shell access to your server
+* **PHP 7.2 or 7.3**, with the following extenstions
+    * OpenSSL
+    * PDO
+    * Mbstring
+    * Tokenizer
+    * XML
+    * Ctype
+    * JSON
+* Composer must be installed
+* A database server with one of the following databases running:
+    * MySQL 5.6+ (recommended)
+    * PostgreSQL 9.4+
+    * SQLite 3.8.8+ (not tested, may work)
+    * SQL Server 2017+ (not tested, may work)
+
+Older PHP versions will not be supported in any way. Please do yourself a favor and do not expose yourself or your users
+to any risks by using an outdated PHP version.
 
 ### 1. Get the .zip file
 
