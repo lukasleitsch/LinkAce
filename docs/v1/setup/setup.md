@@ -19,8 +19,11 @@ want to use for the application.
 
 ### 2. Modify the .env.docker file
 
-Now open the `.env.docker` file and follow the instructions inside the file. All needed variables you have to configure
-are marked accordingly.
+Make a copy of the `.env.docker` file and name it `.env`. By default, you only must change two variables set in this 
+file before starting the setup:
+
+* DB_PASSWORD - Please set a secure password here
+* REDIS_PASSWORD - Please set a secure password here
 
 ### 3. Modify the nginx.conf file (optional)
 
@@ -43,23 +46,19 @@ docker-compose up -d --build
 ```
 ### 5. Prepare the database
 
-As of now, Linkace does not support a standalone installer like Wordpress. To be able to use the app you have to
-prepare the database and register an admin account for yourself. First, initialize the database.  
+After you started the Docker containers, you are almost ready to run the setup. Before the setup, we have to generate
+a secret key.
 Please note that `linkace_php_1` is the name of your PHP container here. It may differ from your name. You will find
-the name of your container in the output of the previous command, but will most likely and with `_php_1`.
+the name of your container in the output of the previous command, but will most likely end with `_php_1`.
 
 ```bash
-docker exec -it linkace_php_1 bash -c "php artisan migrate --seed"
+docker exec -it linkace_php_1 bash -c "php artisan key:generate"
 ```
 
-Now register a new user for yourself. Replace `yourname` with a username consisting of letters and numbers, and 
-`your@email.com` with your actual email. You then have to set a password.
+Open the URL which points to your Docker container in your browser now. You have to configure the database and your 
+user account in this process.
 
-```bash
-docker exec -it linkace_php_1 bash -c "php artisan registeruser yourname your@email.com"
-```
-
-You can now use LinkAce.
+Please make sure to follow the post-installation tasks to fully enable all features.
 
 ---
 
