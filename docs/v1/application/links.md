@@ -66,5 +66,5 @@ is not capable of knowing every website available, so LinkAce will just ping the
 
 ## Notifications about dead or moved Links
 
-Also, if you set up the cron correctly, LinkAce will regularily check all links if they are still available. More
+Also, if you set up the cron correctly, LinkAce will regularly check all links if they are still available. More
 details about this can be found on the [Link Checks](/docs/v1/application/link-checks.md) page.

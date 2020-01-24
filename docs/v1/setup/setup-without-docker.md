@@ -9,7 +9,7 @@ cannot be guaranteed to work in every environment. Please remember that you need
 ### Requirements
 
 * Shell access to your server
-* **PHP 7.2, 7.3 or 7.4**, with the following extenstions
+* **PHP 7.2, 7.3 or 7.4**, with the following extensions
     * OpenSSL
     * PDO
     * Mbstring

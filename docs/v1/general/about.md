@@ -9,18 +9,21 @@ even if most features are almost the same. I used Shaarli for a while but I neve
 with it. Maybe it was the inability to add another layer of taxonomy to saved links or the used template system which
 stopped me from customizing the app like I want.
 
+## Highlights
 
-## LinkAce features
+* Bookmark links with automatic title and description generation.
+* Private or public links. You decide, which saved links are private or which are accessible to the public.
+* Automated, regular link checks to inform you when a saved link goes offline or is moved to another location.
+* Automated backups of your links via the [Waybackmachine](https://archive.org/web/web.php). All saved links are sent
+    to the Waybackmachine which then stores a copy of the site for you.
 
-* Bookmark links with automatic title and description generation
+## Other LinkAce features
+
 * Organize bookmarks in categories and tags
 * A bookmarklet to quickly save links from any browser
-* Private or public links, so friends or internet strangers can see your collection
 * Add notes to links to add thoughts
 * Advanced search for your bookmarks
 * Import existing bookmarks from HTML exports (other methods planned)
-* Automated link checks to make sure your links stay available
-* Automated "backups" of your sites via the [Waybackmachine](https://archive.org/web/web.php)
 * Implemented support for complete database and app backups to Amazon AWS S3
 
 
@@ -29,3 +32,5 @@ stopped me from customizing the app like I want.
 As mentioned, I built LinkAce for myself. Therefore I will only provide limited support for the application as well
 as limit my work on it after all needed features are present. However, feature requests are always welcome and I will 
 happily accept contributions.
+
+**I do not provide any paid customization or support like installation help!**

@@ -31,7 +31,7 @@ Your cron must run **every minute** and must open the URL provided in the system
 look like this:
 
 ```
-*   *   *   *   *   wget -qO- https://linkace-demo.kovah.de/cron/WPvv4mxM6nr22Aq4rVf1qEKutsXLTgyw > /dev/null
+*   *   *   *   *   wget -qO- https://linkace.example.com/cron/WPvv4mxM6nr22Aq4rVf1qEKutsXLTgyw > /dev/null
 ```
 
 ### Re-generate the cron token

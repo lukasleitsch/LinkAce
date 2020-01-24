@@ -4,7 +4,7 @@ layout: default
 ---
 
 LinkAce has a nice feature called Link Checks. If you [set up your cron](/docs/v1/configuration/system-settings) 
-correctly, LinkAce will regularily take a chunk of links from your collection and check if the links are still 
+correctly, LinkAce will regularly take a chunk of links from your collection and check if the links are still 
 accessible.
 
 ## How does this work?
