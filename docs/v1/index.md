@@ -14,6 +14,10 @@ layout: default
 * [Setup without Docker](/docs/v1/setup/setup-without-docker)
 * [Post-Setup Steps](/docs/v1/setup/post-setup)
 
+#### Upgrade Guides
+
+* [Upgrade LinkAce](/docs/v1/upgrade/)
+
 #### The Application
 
 * [Dashboard](/docs/v1/application/dashboard)
