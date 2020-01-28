@@ -6,6 +6,7 @@ layout: default
 #### General
 
 * [General](/docs/v1/general/about)
+* [Translations](/docs/v1/general/translations)
 * [Changelog](/docs/v1/general/changelog)
 
 #### Setup
