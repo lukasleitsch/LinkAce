@@ -62,16 +62,19 @@ class ImportController extends Controller
 
                 $title = $link['title'] ?: $link_meta['title'];
 
-                $new_link = Link::create([
+                $new_link = new Link([
                     'user_id' => $user_id,
                     'url' => $link['uri'],
                     'title' => $title,
                     'description' => $link['note'] ?: $link_meta['description'],
                     'icon' => LinkIconMapper::mapLink($link['uri']),
                     'is_private' => $link['pub'],
-                    'created_at' => Carbon::createFromTimestamp($link['time']),
-                    'updated_at' => Carbon::now(),
                 ]);
+
+                // created_at is not fillable. We have to set it.
+                $new_link->created_at = Carbon::createFromTimestamp($link['time']);
+                $new_link->save();
+
 
                 // Get all tags
                 if (!empty($link['tags'])) {
