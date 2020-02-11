@@ -2,6 +2,8 @@
 
 namespace App\Helper;
 
+use ForceUTF8\Encoding;
+
 /**
  * Class LinkAce
  *
@@ -49,16 +51,19 @@ class LinkAce
             $title = trim($title);
         }
 
+        $title =  $title ?? $fallback['title'];
+
         // Get the title or the og:description tag or the twitter:description tag
         $description = $tags['description']
             ?? $tags['og:description']
             ?? $tags['twitter:description']
             ?? $fallback['description'];
 
-        return [
-            'title' => $title ?? $fallback['title'],
-            'description' => $description,
-        ];
+        // Fix UTF8 Issues
+        $title = Encoding::fixUTF8($title);
+        $description = Encoding::fixUTF8($description);
+
+        return compact('title', 'description');
     }
 
     /**
