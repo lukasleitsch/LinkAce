@@ -74,6 +74,10 @@ class LinkAce
         $title = self::fixString($title);
         $description = self::fixString($description);
 
+        // Decode HTML Entities
+        $title = html_entity_decode($title);
+        $description = html_entity_decode($description);
+
         return compact('title', 'description');
     }
 
