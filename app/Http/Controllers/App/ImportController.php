@@ -75,7 +75,6 @@ class ImportController extends Controller
                 $new_link->created_at = Carbon::createFromTimestamp($link['time']);
                 $new_link->save();
 
-
                 // Get all tags
                 if (!empty($link['tags'])) {
                     $tags = explode(' ', $link['tags']);

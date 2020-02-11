@@ -62,7 +62,7 @@ class LinkAce
             }
         }
 
-        $title =  $title ?? $open_graph['og:title'] ?? $fallback['title'];
+        $title = $title ?? $open_graph['og:title'] ?? $fallback['title'];
 
         // Get the title or the og:description tag or the twitter:description tag
         $description = $open_graph['og:description']
