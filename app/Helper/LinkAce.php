@@ -51,11 +51,22 @@ class LinkAce
             $title = trim($title);
         }
 
-        $title =  $title ?? $fallback['title'];
+        // Parse OpenGraph meta data
+        preg_match_all('/<\s*meta\s+property="(og:[^"]+)"\s+content="([^"]*)/i', $html, $opengraph_matches);
+
+        // Format OpenGraph matches
+        $open_graph = [];
+        if(array_key_exists(1, $opengraph_matches) && count($opengraph_matches[1]) > 0) {
+            foreach ($opengraph_matches[1] as $key => $item) {
+                $open_graph[$item] = $opengraph_matches[2][$key];
+            }
+        }
+
+        $title =  $title ?? $open_graph['og:title'] ?? $fallback['title'];
 
         // Get the title or the og:description tag or the twitter:description tag
-        $description = $tags['description']
-            ?? $tags['og:description']
+        $description = $open_graph['og:description']
+            ?? $tags['description']
             ?? $tags['twitter:description']
             ?? $fallback['description'];
 
