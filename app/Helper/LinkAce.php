@@ -71,8 +71,8 @@ class LinkAce
             ?? $fallback['description'];
 
         // Fix UTF8 Issues
-        $title = Encoding::fixUTF8($title);
-        $description = Encoding::fixUTF8($description);
+        $title = self::fixString($title);
+        $description = self::fixString($description);
 
         return compact('title', 'description');
     }
@@ -90,5 +90,20 @@ class LinkAce
         $bm_code = str_replace('##URL##', route('bookmarklet-add'), $bm_code);
 
         return $bm_code;
+    }
+
+    /**
+     * Fix UTF8 issues in a string
+     *
+     * @param string $string
+     *
+     * @return string
+     */
+    public static function fixString(string $string): string
+    {
+        $string = Encoding::toUTF8($string);
+        $string = Encoding::fixUTF8($string);
+
+        return $string;
     }
 }
